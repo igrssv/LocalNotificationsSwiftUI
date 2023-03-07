@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-@main
 struct LocalNotificationsSwiftUIApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -12,6 +12,8 @@
 		8E4765E229B7A7A800A9C7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4765E129B7A7A800A9C7CF /* Assets.xcassets */; };
 		8E4765E529B7A7A800A9C7CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4765E429B7A7A800A9C7CF /* Preview Assets.xcassets */; };
 		8E4765EE29B7AB0200A9C7CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4765ED29B7AB0200A9C7CF /* ContentViewModel.swift */; };
+		8E4765F429B7BE7700A9C7CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4765F329B7BE7700A9C7CF /* AppDelegate.swift */; };
+		8E4765F729B7C5D800A9C7CF /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4765F629B7C5D800A9C7CF /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		8E4765E129B7A7A800A9C7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E4765E429B7A7A800A9C7CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E4765ED29B7AB0200A9C7CF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		8E4765F329B7BE7700A9C7CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E4765F529B7C21000A9C7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E4765F629B7C5D800A9C7CF /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +58,14 @@
 		8E4765DC29B7A7A800A9C7CF /* LocalNotificationsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8E4765F529B7C21000A9C7CF /* Info.plist */,
 				8E4765DD29B7A7A800A9C7CF /* LocalNotificationsSwiftUIApp.swift */,
 				8E4765DF29B7A7A800A9C7CF /* ContentView.swift */,
 				8E4765ED29B7AB0200A9C7CF /* ContentViewModel.swift */,
 				8E4765E129B7A7A800A9C7CF /* Assets.xcassets */,
 				8E4765E329B7A7A800A9C7CF /* Preview Content */,
+				8E4765F329B7BE7700A9C7CF /* AppDelegate.swift */,
+				8E4765F629B7C5D800A9C7CF /* SecondView.swift */,
 			);
 			path = LocalNotificationsSwiftUI;
 			sourceTree = "<group>";
@@ -140,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4765F429B7BE7700A9C7CF /* AppDelegate.swift in Sources */,
+				8E4765F729B7C5D800A9C7CF /* SecondView.swift in Sources */,
 				8E4765EE29B7AB0200A9C7CF /* ContentViewModel.swift in Sources */,
 				8E4765E029B7A7A800A9C7CF /* ContentView.swift in Sources */,
 				8E4765DE29B7A7A800A9C7CF /* LocalNotificationsSwiftUIApp.swift in Sources */,
@@ -274,7 +284,7 @@
 				DEVELOPMENT_TEAM = 9KA3W2767U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = LocalNotificationsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -303,7 +313,7 @@
 				DEVELOPMENT_TEAM = 9KA3W2767U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = LocalNotificationsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
