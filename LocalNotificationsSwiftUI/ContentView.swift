@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm =  ContentViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 16) {
+            HStack {
+                TextField("Text message", text: $vm.message)
+                    .padding(10)
+                    .background(.gray.opacity(0.1))
+                    .cornerRadius(20)
+                DatePicker("", selection: $vm.time, displayedComponents: .hourAndMinute)
+            }
+            Button {
+                
+            } label: {
+                Text("Send")
+                    .padding(10)
+                    .frame(maxWidth: .infinity)
+                    .background(.blue.opacity(0.8))
+                    .cornerRadius(20)
+                    .foregroundColor(.black)
+            }
         }
         .padding()
     }
