@@ -11,15 +11,13 @@ struct ContentView: View {
     @StateObject private var vm =  ContentViewModel()
     var body: some View {
         VStack(spacing: 16) {
-            HStack {
-                TextField("Text message", text: $vm.message)
-                    .padding(10)
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(20)
-                DatePicker("", selection: $vm.time, displayedComponents: .hourAndMinute)
-            }
+            DatePicker("", selection: $vm.time)
+            TextField("Text message", text: $vm.message)
+                .padding(10)
+                .background(.gray.opacity(0.1))
+                .cornerRadius(20)
             Button {
-                
+                vm.createNotification()
             } label: {
                 Text("Send")
                     .padding(10)
